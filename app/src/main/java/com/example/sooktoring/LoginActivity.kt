@@ -89,7 +89,7 @@ class LoginActivity : AppCompatActivity() {
                             ?.addOnSuccessListener { void ->
                                 var user = FirebaseAuth.getInstance().currentUser
                                 if (user?.isEmailVerified == true) {
-                                    startActivity(Intent(this, ChatActivity::class.java))
+                                    startActivity(Intent(this, MainActivity::class.java))
                                 }
                             }
                     } else {
