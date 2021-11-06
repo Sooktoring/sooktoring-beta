@@ -64,7 +64,7 @@
             android:lineHeight="40sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="숙명 구글 메일로\n인증을 진행합니다."/>
+            android:text="숙명 구글 메일로\n인증 메일을 발송했습니다."/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_email_join"

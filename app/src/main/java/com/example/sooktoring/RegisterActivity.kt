@@ -41,8 +41,7 @@ class RegisterActivity : AppCompatActivity() {
         var UserPassword = binding.etPassword.text.toString()
         var UserPassword_check = binding.etPasswordCheck.text.toString()
 
-        // 공백 체크
-
+        // EditText 공백 체크
         if (UserName.equals("")) {
             binding.etName.setBackgroundResource(R.drawable.edittext_background_error)
         } else {
@@ -76,6 +75,7 @@ class RegisterActivity : AppCompatActivity() {
                 binding.tvPasswordErrorMsg.visibility = View.GONE
             }
         }
+
 
         if (UserName.equals("") != null && UserEmail.equals("") != null && UserPassword.equals("") != null && UserPassword_check.equals("") != null) {
             auth?.createUserWithEmailAndPassword(UserEmail,

@@ -22,6 +22,8 @@ class Register_verif_email : AppCompatActivity() {
         setContentView(binding.root)
         auth = FirebaseAuth.getInstance()
 
+
+        // 인증 이메일 전송
         if(FirebaseAuth.getInstance().currentUser!!.isEmailVerified){
             Toast.makeText(this, "이메일 인증이 이미 완료되었습니다", Toast.LENGTH_LONG).show()
             return
@@ -36,42 +38,24 @@ class Register_verif_email : AppCompatActivity() {
         }
 
         binding.btnEmailJoin.setOnClickListener {
-            if(FirebaseAuth.getInstance().currentUser?.isEmailVerified!!) {
-                Toast.makeText(this, "인증 성공", Toast.LENGTH_LONG).show()
-                moveLoginPage()
-            } else {
-                Toast.makeText(this, "인증 메일을 확인해주세요.", Toast.LENGTH_LONG).show()
-            }
+            checkAndGoToNextStep()
         }
 
     }
 
-//    fun checkAndGoToNextStep() {
-//        if(FirebaseAuth.getInstance().currentUser?.isEmailVerified!!) {
-//
-//            Toast.makeText(this, "인증 성공", Toast.LENGTH_LONG).show()
-//            moveLoginPage()
-//        } else {
-//            Toast.makeText(this, "인증 메일을 확인해주세요.", Toast.LENGTH_LONG).show()
-//        }
-//
-//        }
-
-    fun sendEmailVerification(){
-
-        if(FirebaseAuth.getInstance().currentUser!!.isEmailVerified){
-            Toast.makeText(this, "이메일 인증이 이미 완료되었습니다", Toast.LENGTH_LONG).show()
-            return
-        }
-
-        FirebaseAuth.getInstance().currentUser!!.sendEmailVerification().addOnCompleteListener { task ->
-            if(task.isSuccessful){
-                Toast.makeText(this, "인증 메일을 보냈습니다", Toast.LENGTH_LONG).show()
-            }else{
-                Toast.makeText(this, task.exception.toString(), Toast.LENGTH_LONG).show()
+    fun checkAndGoToNextStep() {
+        val user = auth!!.currentUser
+        FirebaseAuth.getInstance().currentUser?.reload()
+            ?.addOnSuccessListener { void ->
+                var user = FirebaseAuth.getInstance().currentUser
+                if (user?.isEmailVerified == true) {
+                    startActivity(Intent(this, RegisterDone::class.java))
+                } else {
+                    Toast.makeText(this, "이메일 인증을 진행해주세요.", Toast.LENGTH_LONG).show()
+                }
             }
+
         }
-    }
 
     fun moveLoginPage(){
         startActivity(Intent(this, LoginActivity::class.java))

@@ -105,23 +105,13 @@
                     android:inputType="textUri"
                     android:paddingLeft="8dp"
                     android:layout_marginTop="8dp"
-                    android:layout_width="236dp"
+                    android:layout_width="match_parent"
                     android:layout_height="36dp"
                     android:background="@drawable/edittext_background"
                     android:gravity="center_vertical"
                     android:hint=" 내용을 입력해주세요."
                     android:textColorHint="#c4c4c4"
                     android:textSize="12sp"/>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:layout_width="84dp"
-                    android:layout_height="36dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/bt_certify_join"
-                    android:textSize="12sp"
-                    android:textColor="@color/white">
-                </androidx.appcompat.widget.AppCompatButton>
             </LinearLayout>
 
             <TextView
@@ -215,12 +205,13 @@
                     android:layout_height="0dp"
                     android:layout_weight="1" />
 
-                <ImageView
-                    android:id="@+id/iv_all"
+                <CheckBox
+                    android:id="@+id/cb_checkAll"
                     android:layout_width="16dp"
                     android:layout_height="16dp"
-                    android:layout_gravity="right"
-                    android:src="@drawable/icbt_check_unselected_join"/>
+                    android:button="@android:color/transparent"
+                    android:background="#c4c4c4"/>
+
             </LinearLayout>
 
             <LinearLayout
@@ -242,12 +233,12 @@
                     android:layout_height="0dp"
                     android:layout_weight="1" />
 
-                <ImageView
-                    android:id="@+id/iv_check1"
+                <CheckBox
+                    android:id="@+id/cb_check1"
                     android:layout_width="16dp"
                     android:layout_height="16dp"
-                    android:layout_gravity="right"
-                    android:src="@drawable/icbt_check_unselected_join"/>
+                    android:button="@android:color/transparent"
+                    android:background="#c4c4c4"/>
             </LinearLayout>
 
             <LinearLayout
@@ -263,18 +254,17 @@
                     android:text="개인정보처리방침 (필수)"
                     android:textColor="#000000"
                     android:textSize="12sp" />
-
                 <View
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_weight="1" />
 
-                <ImageView
-                    android:id="@+id/iv_check2"
+                <CheckBox
+                    android:id="@+id/cb_check2"
                     android:layout_width="16dp"
                     android:layout_height="16dp"
-                    android:layout_gravity="right"
-                    android:src="@drawable/icbt_check_unselected_join"/>
+                    android:button="@android:color/transparent"
+                    android:background="#c4c4c4"/>
             </LinearLayout>
 
             <LinearLayout
@@ -296,12 +286,12 @@
                     android:layout_height="0dp"
                     android:layout_weight="1" />
 
-                <ImageView
-                    android:id="@+id/iv_check3"
+                <CheckBox
+                    android:id="@+id/cb_check3"
                     android:layout_width="16dp"
                     android:layout_height="16dp"
-                    android:layout_gravity="right"
-                    android:src="@drawable/icbt_check_unselected_join"/>
+                    android:button="@android:color/transparent"
+                    android:background="#c4c4c4"/>
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton

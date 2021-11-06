@@ -4,15 +4,20 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/drawable/Sooktoring_background.xml" value="0.12685185185185185" />
+        <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/drawable/back_et_mychatbox.xml" value="0.26979166666666665" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/drawable/btn_background.xml" value="0.26979166666666665" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/drawable/edittext_background.xml" value="0.14583333333333334" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/drawable/edittext_background_error.xml" value="0.10092592592592593" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/drawable/google_signin.xml" value="0.26564102564102565" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/activity_chat.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/activity_login.xml" value="0.264" />
-        <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/activity_register.xml" value="0.4" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/activity_register_done.xml" value="0.2418478260869565" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/activity_register_verif_email.xml" value="0.264" />
+        <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/chat_list.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/my_chatbox.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/other_chatbox.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/mipmap-anydpi-v26/Sooktoring.xml" value="0.1453125" />
       </map>
     </option>

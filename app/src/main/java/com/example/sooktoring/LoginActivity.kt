@@ -7,6 +7,7 @@ import android.content.Intent
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import com.example.sooktoring.Message.ChatActivity
 import com.example.sooktoring.databinding.ActivityLoginBinding
 import com.example.sooktoring.databinding.ActivityRegisterBinding
 import com.example.sooktoring.databinding.ActivityRegisterVerifEmailBinding
@@ -35,12 +36,16 @@ class LoginActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         binding.emailLoginButton.setOnClickListener {
-            signinAndSignup()
+            signinEmail()
         }
 
         binding.signupButton.setOnClickListener {
             moveRegisterPage()
         }
+    }
+
+    private fun moveRegisterPage() {
+        startActivity(Intent(this, RegisterActivity::class.java))
     }
 
     fun signinAndSignup() {
@@ -51,7 +56,14 @@ class LoginActivity : AppCompatActivity() {
             ?.addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     // Creating a user account
-                    moveMainPage(task.result?.user)
+                    val user = auth!!.currentUser
+                    FirebaseAuth.getInstance().currentUser?.reload()?.addOnSuccessListener { void ->
+                        var user = FirebaseAuth.getInstance().currentUser
+                        if (user?.isEmailVerified == true) {
+                            startActivity(Intent(this, MainActivity::class.java))
+                        }
+                    }
+
                 } else if (task.exception?.message.isNullOrEmpty()) {
                     // Show the error message
                     Toast.makeText(this, task.exception?.message, Toast.LENGTH_LONG).show()
@@ -70,20 +82,27 @@ class LoginActivity : AppCompatActivity() {
             ?.addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     //Login
-                    moveMainPage(task.result?.user)
-                }else {
-                    //Show the error message
-                    Toast.makeText(this, task.exception?.message, Toast.LENGTH_LONG).show()
+                    if (task.isSuccessful) {
+                        // Creating a user account
+                        val user = auth!!.currentUser
+                        FirebaseAuth.getInstance().currentUser?.reload()
+                            ?.addOnSuccessListener { void ->
+                                var user = FirebaseAuth.getInstance().currentUser
+                                if (user?.isEmailVerified == true) {
+                                    startActivity(Intent(this, ChatActivity::class.java))
+                                }
+                            }
+                    } else {
+                        //Show the error message
+                        Toast.makeText(this, task.exception?.message, Toast.LENGTH_LONG).show()
+                    }
                 }
             }
-    }
-    fun moveMainPage(user: FirebaseUser?){
-        if(user!=null){
-            startActivity(Intent(this, MainActivity::class.java))
+        fun moveMainPage(user: FirebaseUser?) {
+            if (user != null) {
+                startActivity(Intent(this, ChatActivity::class.java))
+            }
         }
-    }
 
-    fun moveRegisterPage(){
-        startActivity(Intent(this, RegisterActivity::class.java))
     }
 }
