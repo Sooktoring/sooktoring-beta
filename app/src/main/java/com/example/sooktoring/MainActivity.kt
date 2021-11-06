@@ -2,13 +2,17 @@ package com.example.sooktoring
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import com.example.sooktoring.databinding.ActivityLoginBinding
+import android.view.MenuItem
 import com.example.sooktoring.databinding.ActivityMainBinding
+import com.example.sooktoring.navigation.AlarmFragment
+import com.example.sooktoring.navigation.ChatFragment
+import com.example.sooktoring.navigation.HomeFragment
+import com.example.sooktoring.navigation.MyPageFragment
+import com.google.android.material.navigation.NavigationBarView
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListener {
 
     private val fragmentOne = Fragment_1()
     private val fragmentTwo = Fragment_2()
@@ -27,36 +31,54 @@ class MainActivity : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
 
-        initNavigationBar()
+//        initNavigationBar()
     }
 
-    private fun initNavigationBar() {
-        binding.bottomNavigation
-        bottom_navigation.run {
-            setOnNavigationItemSelectedListener {
-                when(it.itemId) {
-                    R.id.nav_1-> {
-                        changeFragment(fragmentOne)
-                    }
-                    R.id.nav_2-> {
-                        changeFragment(fragmentTwo)
-                    }
-                    R.id.nav_3 -> {
-                        changeFragment(fragmentThree)
-                    }
-                    R.id.nav_4 -> {
-                        changeFragment(fragmentFour)
-                    }
-                }
-                true
+//    private fun initNavigationBar() {
+//        bottom_navigation.run {
+//            setOnNavigationItemSelectedListener {
+//                when(it.itemId) {
+//                    R.id.action_home-> {
+//                        changeFragment(Frag)
+//                    }
+//                    R.id.action_chat-> {
+//                        changeFragment(fragmentTwo)
+//                    }
+//                    R.id.action_alarm -> {
+//                        changeFragment(Fragment_3())
+//                    }
+//                    R.id.action_mypage -> {
+//                        changeFragment(Fragment_4)
+//                    }
+//                }
+//                true
+//            }
+//            selectedItemId = R.id.action_home }
+//    }
+
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.action_home->{
+                var homeViewFragment = HomeFragment()
+                supportFragmentManager.beginTransaction().replace(R.id.main_content, homeViewFragment).commit()
+                return true
             }
-            selectedItemId = R.id.nav_1 }
-    }
-
-    private fun changeFragment(fragment: Fragment) {
-        supportFragmentManager
-            .beginTransaction()
-            .replace(R.id.bottom_navigation, fragment)
-            .commit()
+            R.id.action_chat->{
+                var chatFragment = ChatFragment()
+                supportFragmentManager.beginTransaction().replace(R.id.main_content, chatFragment).commit()
+                return true
+            }
+            R.id.action_alarm->{
+                var alarmFragment = AlarmFragment()
+                supportFragmentManager.beginTransaction().replace(R.id.main_content, alarmFragment).commit()
+                return true
+            }
+            R.id.action_mypage->{
+                var myPageFragment = MyPageFragment()
+                supportFragmentManager.beginTransaction().replace(R.id.main_content, myPageFragment).commit()
+                return true
+            }
+        }
+        return false
     }
 }

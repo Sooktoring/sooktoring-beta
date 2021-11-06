@@ -210,7 +210,7 @@
                     android:layout_width="16dp"
                     android:layout_height="16dp"
                     android:button="@android:color/transparent"
-                    android:background="#c4c4c4"/>
+                    android:background="@drawable/cb_register"/>
 
             </LinearLayout>
 
@@ -238,7 +238,7 @@
                     android:layout_width="16dp"
                     android:layout_height="16dp"
                     android:button="@android:color/transparent"
-                    android:background="#c4c4c4"/>
+                    android:background="@drawable/cb_register"/>
             </LinearLayout>
 
             <LinearLayout
@@ -264,7 +264,7 @@
                     android:layout_width="16dp"
                     android:layout_height="16dp"
                     android:button="@android:color/transparent"
-                    android:background="#c4c4c4"/>
+                    android:background="@drawable/cb_register"/>
             </LinearLayout>
 
             <LinearLayout
@@ -291,12 +291,21 @@
                     android:layout_width="16dp"
                     android:layout_height="16dp"
                     android:button="@android:color/transparent"
-                    android:background="#c4c4c4"/>
+                    android:background="@drawable/cb_register"/>
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_checkbox_error_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="필수 동의사항을 체크하지 않았습니다."
+                android:layout_marginTop="10dp"
+                android:textSize="8sp"
+                android:textColor="#fe0000"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_join"
-                android:layout_marginTop="59dp"
+                android:layout_marginTop="45dp"
                 android:layout_width="311dp"
                 android:layout_height="44dp"
                 android:layout_gravity="center_horizontal"

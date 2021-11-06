@@ -10,6 +10,8 @@ import androidx.core.content.ContextCompat
 import com.example.sooktoring.databinding.ActivityRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.ktx.Firebase
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -27,9 +29,22 @@ class RegisterActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         binding.tvPasswordErrorMsg.visibility = View.GONE
+        binding.tvCheckboxErrorMsg.visibility = View.GONE
 
         binding.btnJoin.setOnClickListener {
             registerEvent()
+        }
+
+        binding.cbCheckAll.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (isChecked) {
+                binding.cbCheck1.isChecked = true
+                binding.cbCheck2.isChecked = true
+                binding.cbCheck3.isChecked = true
+            } else {
+                binding.cbCheck1.isChecked = false
+                binding.cbCheck2.isChecked = false
+                binding.cbCheck3.isChecked = false
+            }
         }
 
     }
@@ -40,6 +55,13 @@ class RegisterActivity : AppCompatActivity() {
         var UserEmail = binding.etMail.text.toString()
         var UserPassword = binding.etPassword.text.toString()
         var UserPassword_check = binding.etPasswordCheck.text.toString()
+
+        val database : FirebaseDatabase = FirebaseDatabase.getInstance()
+
+
+        println("cbCheck1: "+binding.cbCheck1.isChecked)
+        println("cbCheck2: "+binding.cbCheck2.isChecked)
+        println("cbCheck3: "+binding.cbCheck3.isChecked)
 
         // EditText 공백 체크
         if (UserName.equals("")) {
@@ -76,8 +98,21 @@ class RegisterActivity : AppCompatActivity() {
             }
         }
 
+        val check = binding.cbCheck1.isChecked == true && binding.cbCheck2.isChecked == true && binding.cbCheck3.isChecked == true
 
-        if (UserName.equals("") != null && UserEmail.equals("") != null && UserPassword.equals("") != null && UserPassword_check.equals("") != null) {
+        if (binding.cbCheck1.isChecked == true && binding.cbCheck2.isChecked == true && binding.cbCheck3.isChecked == true) {
+            binding.tvCheckboxErrorMsg.visibility = View.GONE
+        } else {
+            binding.tvCheckboxErrorMsg.visibility = View.VISIBLE
+        }
+
+        if (binding.cbCheck1.isSelected == true) {
+            Toast.makeText(this, "cbCheck1 성공", Toast.LENGTH_LONG).show()
+        }
+
+
+        if (UserName.equals("") != null && UserEmail.equals("") != null && UserPassword.equals("") != null && UserPassword_check.equals("") != null
+            && check == true) {
             auth?.createUserWithEmailAndPassword(UserEmail,
                 binding.etPassword.text.toString())?.addOnCompleteListener {
                     task ->
