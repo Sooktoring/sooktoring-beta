@@ -3,6 +3,7 @@ package com.example.sooktoring
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import androidx.core.app.ActivityCompat
 import com.example.sooktoring.databinding.ActivityMainBinding
 import com.example.sooktoring.navigation.AlarmFragment
 import com.example.sooktoring.navigation.ChatFragment
@@ -30,6 +31,11 @@ class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListen
         setContentView(binding.root)
 
         auth = FirebaseAuth.getInstance()
+
+        binding.bottomNavigation.setOnItemSelectedListener(this)
+
+        ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE), 1)
+        binding.bottomNavigation.selectedItemId = R.id.action_home
 
 //        initNavigationBar()
     }

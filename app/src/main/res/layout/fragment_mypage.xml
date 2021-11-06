@@ -39,11 +39,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:text="회원 가입"
-                android:textColor="#404040"
-                android:textStyle="bold"
+                android:text="마이 페이지"
                 android:textAlignment="center"
-                android:textSize="16sp" />
+                android:textColor="#404040"
+                android:textSize="16sp"
+                android:textStyle="bold" />
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
 
@@ -70,7 +70,7 @@
             android:layout_height="wrap_content"
             android:textSize="8sp"
             android:textColor="#aaaaaa"
-            android:text="로그아웃"/>
+            android:text="회원탈퇴"/>
     </LinearLayout>
 
     <LinearLayout
