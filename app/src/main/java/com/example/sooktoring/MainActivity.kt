@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.core.app.ActivityCompat
+import com.example.sooktoring.Tab.MainTabFragment
 import com.example.sooktoring.databinding.ActivityMainBinding
 import com.example.sooktoring.navigation.AlarmFragment
 import com.example.sooktoring.navigation.ChatFragment
@@ -65,8 +66,8 @@ class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListen
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.action_home->{
-                var homeViewFragment = HomeFragment()
-                supportFragmentManager.beginTransaction().replace(R.id.main_content, homeViewFragment).commit()
+                var mainTabFragment = MainTabFragment()
+                supportFragmentManager.beginTransaction().replace(R.id.main_content, mainTabFragment).commit()
                 return true
             }
             R.id.action_chat->{

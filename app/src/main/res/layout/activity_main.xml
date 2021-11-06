@@ -22,6 +22,7 @@
         android:layout_height="match_parent"
         android:layout_above="@id/nav_division"
         android:layout_below="@+id/toolbar_division"></FrameLayout>
+
     <LinearLayout
         android:id="@+id/nav_division"
         android:background="@color/colorDivision"
@@ -39,5 +40,5 @@
         android:layout_marginBottom="0dp"
         android:background="#eeeeee"
         app:itemIconTint="@drawable/nv_home"
-        app:menu="@menu/menu"/>
+        app:menu="@menu/menu" />
 </RelativeLayout>

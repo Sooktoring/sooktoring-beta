@@ -12,11 +12,14 @@
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/drawable/google_signin.xml" value="0.26564102564102565" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26979166666666665" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/drawable/nv_home.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/drawable/round_button.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/drawable/round_profile.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/font/font.xml" value="0.25833333333333336" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/activity_alarm_fragment.xml" value="0.20425724637681159" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/activity_chat.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/activity_chat_fragment.xml" value="0.20425724637681159" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/activity_login.xml" value="0.264" />
-        <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/activity_main.xml" value="0.10416666666666667" />
+        <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/activity_my_page_fragment.xml" value="0.20425724637681159" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/activity_register.xml" value="0.264" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/activity_register_done.xml" value="0.2418478260869565" />
@@ -30,6 +33,9 @@
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/fragment_chat.xml" value="0.1" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/fragment_mypage.xml" value="0.264" />
+        <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/main_contest_fragment.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/main_tab_fragment.xml" value="0.264" />
+        <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/mentor_home.xml" value="0.6" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/menu.xml" value="0.26313405797101447" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/my_chatbox.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/abcd2/Desktop/Sooktoring/sooktoring-beta/sooktoring-beta/app/src/main/res/layout/other_chatbox.xml" value="0.25364583333333335" />
