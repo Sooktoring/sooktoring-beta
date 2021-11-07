@@ -26,7 +26,6 @@
             android:layout_width="68dp"
             android:layout_height="68dp"
             android:layout_marginLeft="146dp"
-            android:layout_marginTop="69dp"
             android:layout_marginRight="146dp"
             android:src="@drawable/app_logo" />
 
@@ -40,6 +39,7 @@
             android:layout_marginRight="139dp"
             android:text="SOOKTORYING"
             android:textSize="12sp"
+            android:textColor="@color/black"
             android:textStyle="normal" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -55,6 +55,7 @@
                 android:paddingLeft="8dp"
                 android:hint="이메일"
                 android:layout_marginLeft="3dp"
+                android:textSize="12sp"
                 android:background="@drawable/edittext_background"
                 android:textColorHint="#c4c4c4" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -74,6 +75,7 @@
                 android:layout_height="44dp"
                 android:layout_marginTop="8dp"
                 android:hint="패스워드"
+                android:textSize="12sp"
                 android:inputType="textPassword"
                 android:textColorHint="#c4c4c4" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -89,7 +91,7 @@
                 android:layout_marginLeft="24dp"
                 android:text="이메일 저장"
                 android:textColor="#404040"
-                android:textSize="12sp" />
+                android:textSize="12sp"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -128,6 +130,7 @@
 
         <LinearLayout
             android:layout_width="360dp"
+            android:layout_marginBottom="50dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:orientation="horizontal">
@@ -137,6 +140,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="194dp"
                 android:text="아이디 찾기"
+                android:textColor="#404040"
                 android:textSize="12sp" />
 
             <TextView
@@ -148,16 +152,6 @@
                 android:textSize="12sp" />
 
         </LinearLayout>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/google_sign_in_button"
-            android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
-            android:layout_marginBottom="50dp"
-            android:background="@drawable/google_signin"
-            android:text="숙명 구글 계정으로 로그인" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

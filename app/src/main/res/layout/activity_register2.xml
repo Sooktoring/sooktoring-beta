@@ -259,7 +259,6 @@
                 android:textSize="16sp" />
 
             <EditText
-                android:inputType="date"
                 android:id="@+id/admin"
                 android:paddingLeft="8dp"
                 android:layout_marginTop="8dp"
@@ -270,6 +269,7 @@
                 android:hint="YYYY / MM"
                 android:textColorHint="#c4c4c4"
                 android:textSize="12sp"/>
+
 
             <LinearLayout
                 android:layout_marginTop="31dp"
@@ -391,10 +391,10 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_join"
                 android:layout_marginTop="45dp"
+                android:layout_marginBottom="188dp"
                 android:layout_width="311dp"
                 android:layout_height="44dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="200dp"
                 android:background="@drawable/bt_joinbt_active_join"/>
         </LinearLayout>
     </ScrollView>

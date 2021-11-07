@@ -1,5 +1,6 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="4dp"
     android:layout_width="96dp"
     android:layout_height="120dp"
     android:orientation="vertical"
@@ -42,12 +43,19 @@
         android:layout_height="12dp"
         android:orientation="horizontal"
         android:layout_marginTop="9dp">
-        <ImageView
+
+        <LinearLayout
             android:layout_width="15dp"
-            android:layout_height="12dp"
-            android:src="@drawable/img_snowflower"
-            android:id="@+id/character"
-            android:layout_marginLeft="25dp"/>
+            android:layout_height="12sp"
+            android:orientation="vertical"
+            android:layout_marginLeft="25dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_snowflower"
+                android:id="@+id/iv_user_rank"/>
+        </LinearLayout>
+
         <TextView
             android:layout_width="23dp"
             android:layout_height="12dp"
@@ -56,6 +64,6 @@
             android:textSize="8sp"
             android:textColor="@color/black"
             android:text="눈송이"
-            android:id="@+id/nickname"/>
+            android:id="@+id/tv_user_rank"/>
     </LinearLayout>
 </LinearLayout>
