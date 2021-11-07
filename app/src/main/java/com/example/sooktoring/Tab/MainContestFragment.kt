@@ -14,11 +14,7 @@ class MainContestFragment : Fragment() {
         var view = LayoutInflater.from(activity).inflate(R.layout.main_contest_fragment,container,false)
         return view
     }*/
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView( inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle? ): View? {
         return inflater.inflate(R.layout.main_contest_fragment, container, false)
     }
 }

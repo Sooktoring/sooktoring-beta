@@ -10,10 +10,6 @@ import kotlinx.android.synthetic.main.main_club_fragment.*
 import kotlinx.android.synthetic.main.main_mentoring_fragment.*
 
 class MainMentoringFragment : Fragment() {
-    /*override fun onCreateView( inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        var view = LayoutInflater.from(activity).inflate(R.layout.main_mentoring_fragment,container,false)
-        return view
-    }*/
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -22,4 +18,6 @@ class MainMentoringFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.main_mentoring_fragment, container, false)
     }
+    
+    
 }
