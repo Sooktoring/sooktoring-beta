@@ -67,7 +67,8 @@ class LoginActivity : AppCompatActivity() {
                 } else if (task.exception?.message.isNullOrEmpty()) {
                     // Show the error message
                     Toast.makeText(this, task.exception?.message, Toast.LENGTH_LONG).show()
-                } else {
+                }
+                else {
                     // Login if you have account
                     signinEmail()
                 }

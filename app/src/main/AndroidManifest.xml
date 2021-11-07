@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sooktoring">
         <activity
+            android:name=".EvaluateActivity"
+            android:exported="false" />
+        <activity
             android:name=".navigation.MyPageFragment"
             android:exported="false" />
         <activity

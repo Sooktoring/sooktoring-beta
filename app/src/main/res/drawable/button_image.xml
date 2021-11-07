@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:drawable="@drawable/coding_dog" android:width="60dp" android:height="60dp" />
+    </layer-list>
+    <Textview
+        android:text="오늘의 멘토링은 어떠셨나요?\n만족스러운만큼 눈송이를 눌러주세요">
+        <button>
+
+        </button>
+    </Textview>
+</shape>

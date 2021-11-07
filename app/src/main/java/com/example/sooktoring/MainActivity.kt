@@ -27,7 +27,8 @@ class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListen
     var auth: FirebaseAuth? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+        super.onCreate(R.profilist=arrayOF1)
+        val profilList= arrayListOf<Profiles,(R.drawable.ic_launcher>()
         mBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

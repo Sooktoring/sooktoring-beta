@@ -1,5 +1,6 @@
 package com.example.sooktoring.Model
 
+import androidx.constraintlayout.motion.widget.DesignTool
 import java.time.Period
 import java.util.*
 
@@ -9,13 +10,15 @@ data class userModel(
     var userId : String? = null,
     var timestamp: Long? = null,
     var career: String? = null,
-    var rank: String? = null) { data class eduLevel (var uid: String? = null,
+    var rank: String? = null) { data class timestamp (var uid: String? = null,
                         var userId: String? = null,
                         var eduContent: String? = null,
                         var eduStartYYMM: Date? = null,
                         var eduEndYYMM: Date? = null,
                         var timestamp: Long? = null) {
-        data class extraActivity (
+
+    data class extraActivity (designTool: DesignTool
+        }
             var uid: String? = null,
             var userId: String? = null,
             var extActContent: String? = null,
