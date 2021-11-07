@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffee44"
     android:layout_width="match_parent"
-    android:background="#c4c4c4"
     android:layout_height="match_parent">
     <TextView
-        android:id="@+id/main_contest"
+        android:id="@+id/main_club"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="공모전"
+        android:text="동아리"
         android:gravity="center"></TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
