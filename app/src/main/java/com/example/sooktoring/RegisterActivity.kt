@@ -26,8 +26,6 @@ class RegisterActivity : AppCompatActivity() {
     var auth: FirebaseAuth? = null
     var firestore : FirebaseFirestore? = null
 
-    private val email_check_flag = 0
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mBinding = ActivityRegisterBinding.inflate(layoutInflater)
@@ -102,13 +100,13 @@ class RegisterActivity : AppCompatActivity() {
             }
         }
 
-        if (binding.firstMajor.equals("")) {
+        if (UserFirstMajor.equals("")) {
             binding.firstMajor.setBackgroundResource(R.drawable.edittext_background_error)
         } else {
             binding.etPassword.setBackgroundResource(R.drawable.edittext_background)
         }
 
-        if (binding.admin.equals("")) {
+        if (UserAdminDate.equals("")) {
             binding.admin.setBackgroundResource(R.drawable.edittext_background_error)
         } else {
             binding.admin.setBackgroundResource(R.drawable.edittext_background)

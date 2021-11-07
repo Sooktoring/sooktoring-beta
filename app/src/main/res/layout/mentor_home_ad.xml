@@ -12,7 +12,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginTop="9dp"
         android:src="@drawable/ic_init_profile"
-        android:id="@+id/mentor_iv_profile"/>
+        android:id="@+id/home_img_profile"/>
     <LinearLayout
         android:layout_width="96dp"
         android:layout_height="26dp"
@@ -28,7 +28,7 @@
             android:text="career"
             android:textColor="@color/black"
             android:textAlignment="center"
-            android:id="@+id/mentor_tv_career"/>
+            android:id="@+id/career"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
             android:text="name"
             android:textColor="@color/black"
             android:textAlignment="center"
-            android:id="@+id/mentor_tv_name"/>
+            android:id="@+id/name"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="96dp"
@@ -53,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:src="@drawable/img_snowflower"
-                android:id="@+id/mentor_iv_user_rank"/>
+                android:id="@+id/iv_user_rank"/>
         </LinearLayout>
 
         <TextView
@@ -64,6 +64,6 @@
             android:textSize="8sp"
             android:textColor="@color/black"
             android:text="눈송이"
-            android:id="@+id/mentor_tv_user_rank"/>
+            android:id="@+id/tv_user_rank"/>
     </LinearLayout>
 </LinearLayout>
