@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "157296652159",
+    "firebase_url": "https://sooktoring-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "sooktoring",
+    "storage_bucket": "sooktoring.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157296652159:android:22026da6be48472102f44a",
+        "android_client_info": {
+          "package_name": "com.example.sooktoring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157296652159-ks6uda1p8k3tjghqnnfs6bvj288e6bmu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sooktoring",
+            "certificate_hash": "f4134c2b51e753269450c998e535426c908fc1e6"
+          }
+        },
+        {
+          "client_id": "157296652159-tlrq7e6bl2loh9de3eo7ve4gnkfbt4qg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdFcz9dSD7VTA4ZbHZ_gJKrUDrDSKP12g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "157296652159-tlrq7e6bl2loh9de3eo7ve4gnkfbt4qg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/icbt_home"
+        android:enabled="true"
+        android:title="" />
+    <item
+        android:id="@+id/action_chat"
+        android:icon="@drawable/icbt_message_square"
+        android:enabled="true"
+        android:title=""/>
+    <item
+        android:id="@+id/action_alarm"
+        android:icon="@drawable/icbt_bell"
+        android:enabled="true"
+        android:title=""/>
+    <item
+        android:id="@+id/action_mypage"
+        android:icon="@drawable/icbt_user"
+        android:enabled="true"
+        android:title=""/>
+</menu>
