@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_margin="3dp"
+    android:layout_width="296dp"
+    android:layout_height="80dp"
+    android:background="@drawable/round_ca_stroke"
+    android:elevation="4dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/ellipse_22"/>
+
+        <TextView
+            android:id="@+id/ca2_EngName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MakeUs"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ca2_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginTop="22dp"
+            android:text="IT 개발/창업"/>
+
+        <TextView
+            android:id="@+id/ca2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold"
+            android:text="메이커스"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ca2_status"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="129dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/ca2_recruit_period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2021/ 12/ 10\n~2021/ 12/ 21"
+            android:textSize="12sp"
+            android:lineHeight="18sp"
+            android:textColor="#aaaaaa"
+            android:layout_marginLeft="59dp"
+            android:layout_marginTop="2dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
