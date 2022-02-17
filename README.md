@@ -6,5 +6,5 @@
 ![Untitled (4)](https://user-images.githubusercontent.com/90624848/154527774-79d89a60-37af-42bb-bd73-71c605a4fc41.png)  
 ![Untitled (5)](https://user-images.githubusercontent.com/90624848/154527783-ea529be8-1021-448b-af66-7737b1a937c9.png)  
 
-**📌기획서 제작** 이정아
+**📌기획서 제작** 이정아   
 **🛠 Tech Stack** Android Kotlin, Firebase
