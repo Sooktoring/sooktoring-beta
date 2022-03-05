@@ -5,6 +5,7 @@
 ![Untitled (3)](https://user-images.githubusercontent.com/90624848/154527684-80eb618c-a124-4281-9b94-fd1d4241da45.png)  
 ![Untitled (4)](https://user-images.githubusercontent.com/90624848/154527774-79d89a60-37af-42bb-bd73-71c605a4fc41.png)  
 ![Untitled (5)](https://user-images.githubusercontent.com/90624848/154527783-ea529be8-1021-448b-af66-7737b1a937c9.png)  
+![uiflow (1)](https://user-images.githubusercontent.com/90624848/156887040-13f26a4d-7691-450a-9dc5-a6b655c02510.png)
 
 **📌기획서 제작** 이정아   
 **🛠 Tech Stack** Android Kotlin, Firebase
